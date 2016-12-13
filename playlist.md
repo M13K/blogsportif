@@ -9,7 +9,7 @@ permalink: /playlist/
  <ul>
 	{%for playlist in site.data.playlist%}
 	
-         {{site.baseurl}}{{playlist}}
+         {{playlist}}
 	
 	{%endfor%}
 
