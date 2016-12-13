@@ -8,11 +8,18 @@ Vous pouvez me contacter pour des questions, soumettre des exercices ou autres.
 Il vous suffit pour cela de remplir le formulaire qui suit : 
 
 <div class="form">
-        
-<form method="POST" action="http://formspree.io/malikalmo@gmail.com">
-<p><input name="Prénom" placeholder="ex: Touco" type="text"></p>
-<p><input name="email" placeholder="Email" type="email"></p>
-<p><textarea name="message" placeholder="Message" rows="10" cols="50" style="width: 410px; height: 197px;"></textarea></p>
-<p><button type="submit">Envoyer</button></p>
+
+<form id="contactform" method="POST">
+    <input type="text" name="name" placeholder="Your name">
+    <input type="email" name="_replyto" placeholder="Your email">
+    <input type="hidden" name="_subject" value="Website contact" />
+    <textarea name="message" placeholder="Your message"></textarea>
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="submit" value="Send">
 </form>
 </div>
+
+<script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'malikalmo' + '@' + 'gmail' + '.' + 'com');
+</script>
