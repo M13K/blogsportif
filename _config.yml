@@ -17,7 +17,7 @@ title: Le Blog du Sportif
 email: ag.koffi@hotmail.fr
 description: > # this means to ignore newlines until "baseurl:"
   Petit blog pour affiner et muscler son corps.
-baseurl: "/blogsportif/" # the subpath of your site, e.g. /blog
+baseurl: "/blogsportif" # the subpath of your site, e.g. /blog
 url: "http://M13K.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  M13K
